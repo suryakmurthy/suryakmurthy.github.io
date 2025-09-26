@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YOUR NAME — Research</title>
+  <meta name="description" content="Brief personal/research overview of YOUR NAME.">
+  <!-- (Optional) Google Fonts; safe to remove if you prefer system fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Bulma (CSS only) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    :root { --accent: #4f46e5; }
+    html, body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    .hero.is-accent { background: linear-gradient(180deg, rgba(79,70,229,0.06), transparent 70%); }
+    .name { letter-spacing: 0.2px; }
+    .chip { display:inline-block; padding:.25rem .5rem; border:1px solid #ddd; border-radius:999px; font-size:.85rem; margin:.15rem .25rem 0 0; }
+    .muted { color:#6b7280; }
+    footer a { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-weight-semibold" href="#">YOUR NAME</a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#about">About</a>
+        <a class="navbar-item" href="#research">Research</a>
+        <a class="navbar-item" href="#pubs">Publications</a>
+        <a class="navbar-item" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero is-accent">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 name">YOUR NAME</h1>
+      <p class="subtitle is-5">PhD Researcher • Multi-agent systems • Multi-task optimization • Safe autonomy</p>
+      <div>
+        <span class="chip">Reinforcement Learning</span>
+        <span class="chip">Multi-Objective Optimization</span>
+        <span class="chip">Urban Air Mobility</span>
+        <span class="chip">Safety & Reliability</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="columns is-variable is-6">
+      <div class="column is-two-thirds">
+        <h2 class="title is-4">About</h2>
+        <p>
+          I am a PhD student in Electrical & Computer Engineering at The University of Texas at Austin,
+          advised by <a href="https://www.prof-url.example">Prof. Ufuk Topcu</a>. My research focuses on
+          algorithms for balancing competing objectives in multi-agent and multi-task settings, with
+          applications to robotics and urban air mobility.
+        </p>
+        <p class="mt-3">
+          I design comparison-aware optimization methods that integrate human or preference feedback and
+          remain robust to non-affine transformations of task losses. Recently I’ve worked on a unified RL
+          framework for noise, energy, and safety management in UAM traffic.
+        </p>
+        <p class="mt-3">
+          <a class="button is-link is-light" href="LINK_TO_CV.pdf">CV</a>
+          <a class="button is-link is-light" href="https://github.com/YOUR_GH">GitHub</a>
+          <a class="button is-link is-light" href="https://scholar.google.com/citations?user=ID">Google Scholar</a>
+          <a class="button is-link is-light" href="mailto:you@university.edu">Email</a>
+        </p>
+      </div>
+      <div class="column">
+        <h3 class="title is-5">At a glance</h3>
+        <ul class="mt-2">
+          <li>Research areas: multi-agent RL, bargaining-based MTL, safety-critical autonomy</li>
+          <li>Tools: Python, PyTorch, MuJoCo, BlueSky, Hydra</li>
+          <li>Collaborators: NASA, MIT Lincoln Laboratory</li>
+        </ul>
+        <p class="mt-4 muted">
+          Links to detailed project pages can live on separate routes or repos.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Research highlights -->
+<section id="research" class="section">
+  <div class="container">
+    <h2 class="title is-4">Research highlights</h2>
+    <div class="content">
+      <ul>
+        <li><strong>DiBS-MTL:</strong> Direction-based bargaining for multi-task learning; invariant to monotonic non-affine transforms. <a href="LINK_TO_PROJECT">Overview</a></li>
+        <li><strong>UAM RL framework:</strong> Joint management of noise, safety, and energy using BlueSky simulations. <a href="LINK_TO_PROJECT">Overview</a></li>
+        <li><strong>Safety-critical anomaly detection:</strong> Image-based risk signals for robotic agents. <a href="LINK_TO_PROJECT">Overview</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Selected publications -->
+<section id="pubs" class="section">
+  <div class="container">
+    <h2 class="title is-4">Selected publications</h2>
+    <div class="content">
+      <ol>
+        <li>
+          <strong>Integrated Noise and Safety Management in UAM via a Unified RL Framework</strong> —
+          T-ITS (under review). <a href="LINK_TO_PAPER">paper</a> · <a href="LINK_TO_CODE">code</a> · <a href="LINK_TO_DATA">data</a>
+        </li>
+        <li>
+          <strong>DiBS-MTL: Direction-based Bargaining for Multi-Task Learning</strong> —
+          NeurIPS submission. <a href="LINK_TO_ARXIV">preprint</a> · <a href="LINK_TO_REPO">code</a>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="title is-4">Contact</h2>
+    <p>Email: <a href="mailto:you@university.edu">you@university.edu</a> · GitHub: <a href="https://github.com/YOUR_GH">@YOUR_GH</a></p>
+    <p class="muted">Last updated: Sep 2025</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>© YOUR NAME. This page is a minimal Bulma template. No analytics, no trackers.</p>
+    <p class="is-size-7">If you adapt code from others, include appropriate attribution or a LICENSE file.</p>
+  </div>
+</footer>
+
+<script>
+  // Minimal navbar burger
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.querySelector('.navbar-menu');
+    if (burger && menu) {
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    }
+  });
+</script>
+</body>
+</html>
