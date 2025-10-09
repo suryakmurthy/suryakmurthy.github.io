@@ -3,20 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>YOUR NAME — Research</title>
-  <meta name="description" content="Brief personal/research overview of YOUR NAME.">
-  <!-- (Optional) Google Fonts; safe to remove if you prefer system fonts -->
+  <title>Surya Murthy — Research</title>
+  <meta name="description" content="Surya Murthy: PhD researcher at UT Austin specializing in multi-agent systems, multi-task optimization, and safe autonomy.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Bulma (CSS only) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <style>
-    :root { --accent: #4f46e5; }
-    html, body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
-    .hero.is-accent { background: linear-gradient(180deg, rgba(79,70,229,0.06), transparent 70%); }
-    .name { letter-spacing: 0.2px; }
+    :root { --accent:#4f46e5; }
+    html, body { font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+    .hero.is-accent { background:linear-gradient(180deg,rgba(79,70,229,0.06),transparent 70%); }
+    .name { letter-spacing:.2px; }
     .chip { display:inline-block; padding:.25rem .5rem; border:1px solid #ddd; border-radius:999px; font-size:.85rem; margin:.15rem .25rem 0 0; }
     .muted { color:#6b7280; }
-    footer a { text-decoration: underline; }
+    .headshot { max-width:400px; border-radius:8px; box-shadow:0 6px 24px rgba(0,0,0,.08); }
+    .btn-row .button { margin-right:.5rem; margin-bottom:.5rem; }
+    footer a { text-decoration:underline; }
+    .subtitle-small { color:#6b7280; font-size:.95rem; margin-top:-0.5rem; margin-bottom:1rem; }
+    /* reduced spacing between sections */
+    .section { padding:3rem 1rem; }
+    @media(max-width:768px){ .headshot{max-width:70%;} }
   </style>
 </head>
 <body>
@@ -25,7 +29,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item has-text-weight-semibold" href="#">YOUR NAME</a>
+      <a class="navbar-item has-text-weight-semibold" href="#">Surya Murthy</a>
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </a>
@@ -33,6 +37,7 @@
     <div class="navbar-menu">
       <div class="navbar-end">
         <a class="navbar-item" href="#about">About</a>
+        <a class="navbar-item" href="#news">News</a>
         <a class="navbar-item" href="#research">Research</a>
         <a class="navbar-item" href="#pubs">Publications</a>
         <a class="navbar-item" href="#contact">Contact</a>
@@ -45,13 +50,19 @@
 <section class="hero is-accent">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title is-2 name">YOUR NAME</h1>
-      <p class="subtitle is-5">PhD Researcher • Multi-agent systems • Multi-task optimization • Safe autonomy</p>
-      <div>
-        <span class="chip">Reinforcement Learning</span>
-        <span class="chip">Multi-Objective Optimization</span>
-        <span class="chip">Urban Air Mobility</span>
-        <span class="chip">Safety & Reliability</span>
+      <div class="columns is-vcentered">
+        <div class="column">
+          <h1 class="title is-2 name">Surya Murthy</h1>
+          <p class="subtitle is-5">PhD Student · University of Texas at Austin</p>
+          <div>
+            <span class="chip">Multi-Agent Reinforcement Learning</span>
+            <span class="chip">Multi-Objective Optimization</span>
+            <span class="chip">Human–Autonomy Interaction</span>
+          </div>
+        </div>
+        <div class="column is-narrow has-text-centered">
+          <img class="headshot" src="static/images/Surya_Murthy.jfif" alt="Photo of Surya Murthy" loading="eager" decoding="async">
+        </div>
       </div>
     </div>
   </div>
@@ -64,66 +75,150 @@
       <div class="column is-two-thirds">
         <h2 class="title is-4">About</h2>
         <p>
-          I am a PhD student in Electrical & Computer Engineering at The University of Texas at Austin,
-          advised by <a href="https://www.prof-url.example">Prof. Ufuk Topcu</a>. My research focuses on
-          algorithms for balancing competing objectives in multi-agent and multi-task settings, with
-          applications to robotics and urban air mobility.
+          I am a PhD student in Electrical &amp; Computer Engineering at the University of Texas at Austin,
+          advised by <a href="https://oden.utexas.edu/people/directory/ufuk--topcu/">Prof. Ufuk Topcu</a>.
+          My research focuses on scalable and robust algorithms for multi-agent and multi-task settings,
+          with applications to robotics and urban air mobility.
         </p>
         <p class="mt-3">
-          I design comparison-aware optimization methods that integrate human or preference feedback and
-          remain robust to non-affine transformations of task losses. Recently I’ve worked on a unified RL
-          framework for noise, energy, and safety management in UAM traffic.
+          I build large-scale simulation environments and develop reinforcement-learning methods
+          to induce real-time coordination among agents, exploring trade-offs among objectives such as
+          safety, noise, and energy. I also develop cooperative bargaining and preference-estimation frameworks
+          to integrate human feedback and find fair, Pareto-efficient solutions.
         </p>
-        <p class="mt-3">
-          <a class="button is-link is-light" href="LINK_TO_CV.pdf">CV</a>
-          <a class="button is-link is-light" href="https://github.com/YOUR_GH">GitHub</a>
-          <a class="button is-link is-light" href="https://scholar.google.com/citations?user=ID">Google Scholar</a>
-          <a class="button is-link is-light" href="mailto:you@university.edu">Email</a>
+        <p class="mt-3 btn-row">
+          <a class="button is-link is-light" href="static/images/Surya_Murthy_CV.pdf" download>CV (PDF)</a>
+          <a class="button is-link is-light" href="https://github.com/suryakmurthy">GitHub</a>
+          <a class="button is-link is-light" href="https://scholar.google.com/citations?user=jOBKnFoAAAAJ">Google Scholar</a>
+          <a class="button is-link is-light" href="mailto:surya.murthy@utexas.edu">Email</a>
         </p>
       </div>
       <div class="column">
         <h3 class="title is-5">At a glance</h3>
         <ul class="mt-2">
           <li>Research areas: multi-agent RL, bargaining-based MTL, safety-critical autonomy</li>
-          <li>Tools: Python, PyTorch, MuJoCo, BlueSky, Hydra</li>
+          <li>Tools: Python, PyTorch, MuJoCo, BlueSky, CUDA</li>
           <li>Collaborators: NASA, MIT Lincoln Laboratory</li>
         </ul>
-        <p class="mt-4 muted">
-          Links to detailed project pages can live on separate routes or repos.
-        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Research highlights -->
-<section id="research" class="section">
+<!-- News -->
+<section id="news" class="section">
   <div class="container">
-    <h2 class="title is-4">Research highlights</h2>
-    <div class="content">
-      <ul>
-        <li><strong>DiBS-MTL:</strong> Direction-based bargaining for multi-task learning; invariant to monotonic non-affine transforms. <a href="LINK_TO_PROJECT">Overview</a></li>
-        <li><strong>UAM RL framework:</strong> Joint management of noise, safety, and energy using BlueSky simulations. <a href="LINK_TO_PROJECT">Overview</a></li>
-        <li><strong>Safety-critical anomaly detection:</strong> Image-based risk signals for robotic agents. <a href="LINK_TO_PROJECT">Overview</a></li>
-      </ul>
-    </div>
+    <h2 class="title is-4">News</h2>
+    <ul>
+      <li><b>September 2025:</b> Our paper <i>“Cooperative Bargaining Games Without Utilities: Mediated Solutions from Direction Oracles”</i> was accepted to <b>NeurIPS 2025</b>. We will be attending the conference in December!</li>
+    </ul>
   </div>
 </section>
 
-<!-- Selected publications -->
+<!-- Research -->
+<section id="research" class="section">
+  <div class="container">
+    <h2 class="title is-4">Research</h2>
+
+    <!-- Cooperative and Preference-Aligned Learning -->
+    <h3 class="title is-5 mt-5">Cooperative and Preference-Aligned Learning</h3>
+    <p class="subtitle-small">Bargaining-based and preference-driven methods for fair, invariant, and aligned multi-task learning.</p>
+    <p>
+      This work develops algorithms for <b>multi-objective optimization from comparisons</b>, where agents must find fair trade-offs without explicit utility values.
+      The resulting <b>DiBS (Direction-based Bargaining Solution)</b> framework models learning as a bargaining process, using only <b>direction-based feedback</b> to reach transformation-invariant, fair solutions.
+      Applied to <b>multi-task learning</b> and <b>reinforcement learning</b>, DiBS achieves balanced task performance even under differently scaled objectives.
+    </p>
+
+    <h4 class="title is-6 mt-4">Associated publications</h4>
+    <ul>
+      <li><b>DiBS-MTL: Transformation-Invariant Multitask Learning with Direction Oracles.</b><br>
+        S Murthy, K Gupta, M Karabag, D Fridovich-Keil, U Topcu.<br>
+        <i>arXiv preprint arXiv:2509.23948 — Under submission to ICLR 2026.</i></li>
+
+      <li><b>Cooperative Bargaining Games Without Utilities: Mediated Solutions from Direction Oracles.</b><br>
+        K Gupta, S Murthy, M Karabag, U Topcu, D Fridovich-Keil.<br>
+        <i>NeurIPS 2025 — arXiv preprint arXiv:2505.14817.</i></li>
+
+      <li><b>Sequential Resource Trading Using Comparison-Based Gradient Estimation.</b><br>
+        S Murthy, M Karabag, U Topcu.<br>
+        <i>arXiv preprint arXiv:2408.11186 — Under review at IEEE TAC.</i></li>
+
+      <li><b>Conveying Autonomous Robot Capabilities through Contrasting Behaviour Summaries.</b><br>
+        P Du, S Murthy, K Driggs-Campbell.<br>
+        <i>arXiv preprint arXiv:2304.00367.</i></li>
+    </ul>
+
+    <!-- Large-Scale Multi-Agent RL for UAM -->
+    <h3 class="title is-5 mt-6">Large-Scale Multi-Agent Reinforcement Learning for Urban Air Mobility</h3>
+    <p class="subtitle-small">Scalable reinforcement-learning frameworks for safe, quiet, and efficient airspace coordination.</p>
+    <p>
+      In collaboration with <b>NASA Langley Research Center</b> and <b>MIT Lincoln Laboratory</b>,
+      I develop reinforcement-learning frameworks for <b>urban air mobility (UAM)</b> traffic management.
+      These systems model airspace as a multi-agent ecosystem where vehicles coordinate to balance
+      <b>safety, noise, and energy efficiency</b> at scale.
+    </p>
+    <p>
+      Using the <b>BlueSky</b> simulator, my work studies emergent behaviors and trade-offs that arise in dense airspace and proposes scalable algorithms to enable safe and quiet autonomous operations.
+    </p>
+
+    <h4 class="title is-6 mt-4">Associated publications</h4>
+    <ul>
+      <li><b>Integrated Noise and Safety Management in UAM via A Unified Reinforcement Learning Framework.</b><br>
+        S Murthy, Z Gao, JP Clarke, U Topcu.<br>
+        <i>arXiv preprint arXiv:2508.16440 — Under review at IEEE T-ITS.</i></li>
+
+      <li><b>A Reinforcement Learning Approach to Quiet and Safe UAM Traffic Management.</b><br>
+        SK Murthy, Z Gao, JPB Clarke, U Topcu.<br>
+        <i>AIAA SciTech 2025 Forum, Paper #2118.</i></li>
+
+      <li><b>Separation Assurance in Urban Air Mobility Systems using Shared Scheduling Protocols.</b><br>
+        SK Murthy, T Ingebrand, S Smith, U Topcu, P Wei, NA Neogi.<br>
+        <i>AIAA SciTech 2025 Forum, Paper #2116.</i></li>
+
+      <li><b>Scheduling for Urban Air Mobility using Safe Learning.</b><br>
+        NA Neogi, S Murthy, S Bharadwaj.<br>
+        <i>20th International Conference on Software Engineering and Formal Methods.</i></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Publications -->
 <section id="pubs" class="section">
   <div class="container">
-    <h2 class="title is-4">Selected publications</h2>
+    <h2 class="title is-4">Full Publications List</h2>
     <div class="content">
       <ol>
-        <li>
-          <strong>Integrated Noise and Safety Management in UAM via a Unified RL Framework</strong> —
-          T-ITS (under review). <a href="LINK_TO_PAPER">paper</a> · <a href="LINK_TO_CODE">code</a> · <a href="LINK_TO_DATA">data</a>
-        </li>
-        <li>
-          <strong>DiBS-MTL: Direction-based Bargaining for Multi-Task Learning</strong> —
-          NeurIPS submission. <a href="LINK_TO_ARXIV">preprint</a> · <a href="LINK_TO_REPO">code</a>
-        </li>
+        <li><b>DiBS-MTL: Transformation-Invariant Multitask Learning with Direction Oracles.</b><br>
+          S Murthy, K Gupta, MO Karabag, D Fridovich-Keil, U Topcu.<br>
+          <i>arXiv preprint arXiv:2509.23948 — Under submission to ICLR 2026.</i></li>
+
+        <li><b>Integrated Noise and Safety Management in UAM via A Unified Reinforcement Learning Framework.</b><br>
+          S Murthy, Z Gao, JP Clarke, U Topcu.<br>
+          <i>arXiv preprint arXiv:2508.16440 — Under review at IEEE T-ITS.</i></li>
+
+        <li><b>Cooperative Bargaining Games Without Utilities: Mediated Solutions from Direction Oracles.</b><br>
+          K Gupta, S Murthy, MO Karabag, U Topcu, D Fridovich-Keil.<br>
+          <i>NeurIPS 2025 — arXiv preprint arXiv:2505.14817.</i></li>
+
+        <li><b>Separation Assurance in Urban Air Mobility Systems using Shared Scheduling Protocols.</b><br>
+          SK Murthy et al.<br>
+          <i>AIAA SciTech 2025 Forum, Paper #2116.</i></li>
+
+        <li><b>A Reinforcement Learning Approach to Quiet and Safe UAM Traffic Management.</b><br>
+          SK Murthy et al.<br>
+          <i>AIAA SciTech 2025 Forum, Paper #2118.</i></li>
+
+        <li><b>Sequential Resource Trading Using Comparison-Based Gradient Estimation.</b><br>
+          S Murthy, MO Karabag, U Topcu.<br>
+          <i>arXiv preprint arXiv:2408.11186 — Under review at IEEE TAC.</i></li>
+
+        <li><b>Conveying Autonomous Robot Capabilities through Contrasting Behaviour Summaries.</b><br>
+          P Du, S Murthy, K Driggs-Campbell.<br>
+          <i>arXiv preprint arXiv:2304.00367.</i></li>
+
+        <li><b>Scheduling for Urban Air Mobility using Safe Learning.</b><br>
+          NA Neogi, S Murthy, S Bharadwaj.<br>
+          <i>20th International Conference on Software Engineering and Formal Methods.</i></li>
       </ol>
     </div>
   </div>
@@ -133,29 +228,21 @@
 <section id="contact" class="section">
   <div class="container">
     <h2 class="title is-4">Contact</h2>
-    <p>Email: <a href="mailto:you@university.edu">you@university.edu</a> · GitHub: <a href="https://github.com/YOUR_GH">@YOUR_GH</a></p>
-    <p class="muted">Last updated: Sep 2025</p>
+    <p>Email: <a href="mailto:surya.murthy@utexas.edu">surya.murthy@utexas.edu</a> · GitHub: <a href="https://github.com/suryakmurthy">@suryakmurthy</a></p>
+    <p class="muted">Last updated: Oct 2025</p>
   </div>
 </section>
 
 <footer class="footer">
   <div class="content has-text-centered">
-    <p>© YOUR NAME. This page is a minimal Bulma template. No analytics, no trackers.</p>
-    <p class="is-size-7">If you adapt code from others, include appropriate attribution or a LICENSE file.</p>
+    <p>© Surya Murthy. Built with Bulma. No analytics, no trackers.</p>
   </div>
 </footer>
 
 <script>
-  // Minimal navbar burger
-  document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.navbar-burger');
-    const menu = document.querySelector('.navbar-menu');
-    if (burger && menu) {
-      burger.addEventListener('click', () => {
-        burger.classList.toggle('is-active');
-        menu.classList.toggle('is-active');
-      });
-    }
+  document.addEventListener('DOMContentLoaded',()=>{
+    const b=document.querySelector('.navbar-burger'),m=document.querySelector('.navbar-menu');
+    if(b&&m){b.addEventListener('click',()=>{b.classList.toggle('is-active');m.classList.toggle('is-active');});}
   });
 </script>
 </body>
